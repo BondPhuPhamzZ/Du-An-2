@@ -368,3 +368,144 @@ a {
 .feature .item:nth-child(3) .item-desc {
   max-width: 224px;
 }
+
+/* ===================== course ============================ */
+.course {
+  margin-top: 10px;
+}
+
+/* Do padding của feature ở trên đã là 60
+   padding của phần course bên dưới cũng là 60
+   mà trong dự án hai khối cách nhau 130px
+    => chỉ cần cách margin top của course lên thêm 10px */
+.course .body-course {
+  max-width: 1171px;
+  padding: 60px 0;
+}
+
+.course .top-title {
+  color: #767e7e;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: normal;
+}
+
+/* heading-lv2 thì phải để max-width */
+.course .heading-lv2 {
+  max-width: 577px;
+  margin-top: 18px;
+  color: #0d1111;
+  font-size: 4.2rem;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.course .h2-span {
+  margin-top: 19px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.course .h2-span .desc {
+  color: #767e7e;
+  font-size: 1.8rem;
+  line-height: 1.78;
+  width: 525px;
+}
+
+.course .h2-span .text {
+  color: #1ebfc1;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+
+.course .course-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 79px;
+}
+
+.course .heading-lv3 {
+  color: #0d1111;
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: normal;
+}
+
+/* thẻ cha */
+.course .course-list .course-item {
+  position: relative;
+}
+
+/* an image only use width and height nor, no need to use max or min width */
+.course .course-item .thumb {
+  width: 359px;
+  height: 393px;
+  object-fit: cover;
+  border-radius: 8px;
+  opacity: 0.7;
+  background: #d0efed;
+}
+
+/* đối với phần tử đè lên cha chỉ cần set width and height normal */
+.course .course-item .course-detail {
+  position: absolute;
+  top: 322px;
+  left: 17px;
+  width: 325px;
+  height: 195px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 16px 90px 0px rgba(0, 0, 0, 0.05);
+}
+
+.course .course-detail .wrap-item {
+  padding: 18px 25px 0;
+}
+
+.course .course-detail .cost {
+  margin-top: 16px;
+  color: #767e7e;
+  font-size: 1.6rem;
+  line-height: normal;
+}
+
+.course .course-detail .cost span {
+  color: #0d1111;
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.course .course-detail .desc {
+  margin-top: 6px;
+  color: #9da6a5;
+  font-size: 1.4rem;
+  line-height: normal;
+}
+
+.course .course-detail .static {
+  margin-top: 18px;
+  left: -10px;
+  color: #9da6a5;
+  font-size: 1.4rem;
+  line-height: normal;
+}
+
+.course .course-detail .static span::before {
+  margin: 0 10px;
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #1ebfc1;
+}
