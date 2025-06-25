@@ -509,3 +509,159 @@ a {
   border-radius: 50%;
   background: #1ebfc1;
 }
+
+/* ==================== Count Down ======================= */
+/* course có padding là 60px
+  hai khối cách nhau 265px */
+
+.countdown {
+  margin-top: 180px;
+}
+
+.countdown .body {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 862px;
+  padding: 25px 0;
+}
+
+.countdown .countdown-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.countdown .countdown-item .static {
+  color: #0d1111;
+  text-align: center;
+  font-size: 6.2rem;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.countdown .countdown-item .desc {
+  margin-top: 11px;
+  color: #767e7e;
+  text-align: center;
+  font-size: 1.8rem;
+  line-height: normal;
+}
+
+/* ==================== Feedback ======================= */
+.feedback {
+  margin-top: 225px;
+}
+
+.feedback .body {
+  position: relative;
+  padding: 37px 0;
+}
+
+.feedback blockquote {
+  max-width: 419px;
+  margin-top: 27px;
+  color: #5d6564;
+  font-size: 3.2rem;
+  line-height: 1.5;
+}
+
+.feedback .body .desc {
+  margin-top: 33px;
+  /* Nên dùng inline-block thay vì flex vì nó sẽ không bỏ qua và hiển thị khoảng trắng giữa các chữ như bình thường */
+  /* phải đổi sang display khác để có thể sử dụng align item */
+  display: flex;
+  align-items: center;
+  /* Dùng gap để có thể cách ra, vì thuộc tính display flex không kích hoạt khoảng trắng */
+  gap: 4px;
+  color: #767e7e;
+  font-size: 1.6rem;
+  line-height: normal;
+}
+
+.feedback .body .desc::before {
+  content: "";
+  display: inline-block;
+  margin-right: 5px;
+  height: 2px;
+  width: 8px;
+  background: #070707;
+}
+
+.feedback .body .desc strong {
+  color: #070707;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.feedback .feedback-cta {
+  margin-left: -30px;
+  display: flex;
+  margin-top: 52px;
+  display: flex;
+}
+
+.feedback .feedback-cta .cta-btn-group {
+  margin-left: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #2ac9bf;
+}
+
+.feedback .feedback-cta .cta-btn-group:hover {
+  opacity: 0.9;
+  box-shadow: 1px solid rgba(207, 20, 195, 0.05);
+  transition: 0.5s;
+}
+
+.feedback .ava-fb {
+  position: absolute;
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+}
+
+.feedback .avar-fb-1 {
+  left: 635px;
+  top: 0;
+  width: 92px;
+  height: 92px;
+}
+
+.feedback .avar-fb-2 {
+  left: 1060px;
+  top: 19px;
+  width: 110px;
+  height: 110px;
+}
+
+.feedback .avar-fb-3 {
+  left: 1060px;
+  top: 374px;
+  width: 78px;
+  height: 78px;
+}
+
+.feedback .avar-fb-4 {
+  left: 703px;
+  top: 403px;
+  width: 78px;
+  height: 78px;
+}
+
+.feedback .avar-fb-5 {
+  left: 491px;
+  top: 258px;
+  width: 78px;
+  height: 78px;
+}
+
+.feedback .avar-fb-6 {
+  left: 764px;
+  top: 107px;
+  width: 235px;
+  height: 235px;
+}
