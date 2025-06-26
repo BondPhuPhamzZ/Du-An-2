@@ -121,6 +121,13 @@ a {
   font-size: 1.4rem;
 }
 
+/* .hero .content-block .top-title-lv2 {
+  color: #767e7e;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: normal;
+} */
+
 .hero .content-block .title {
   margin-top: 18px;
   max-width: 458px;
@@ -515,7 +522,7 @@ a {
   hai khối cách nhau 265px */
 
 .countdown {
-  margin-top: 180px;
+  margin-top: 230px;
 }
 
 .countdown .body {
@@ -664,4 +671,87 @@ a {
   top: 107px;
   width: 235px;
   height: 235px;
+}
+
+/* ==================== Admit ======================= */
+.admit {
+  margin-top: 130px;
+  padding: 76px 135px 88px;
+  background: #def6f5;
+}
+
+/* body là cha, là thẻ bọc admit left và phải */
+.admit .body {
+  display: flex;
+  align-items: center;
+}
+
+.admit .admit-left .heading-lv2 {
+  max-width: 420px;
+  color: #070707;
+  font-size: 4.2rem;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.admit .admit-left .desc {
+  margin-top: 18px;
+  margin-right: 410px;
+  color: #767e7e;
+  font-size: 1.8rem;
+  line-height: normal;
+}
+
+/* ==================== Footer ======================= */
+.footer {
+  background: #fff;
+}
+
+.footer .row-top {
+  margin-top: 130px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .title {
+  color: #2e2e2e;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.footer .list li {
+  margin-top: 18px;
+  color: #535353;
+  font-size: 1.6rem;
+  line-height: normal;
+}
+
+.footer .list li:first-child {
+  margin-top: 26px;
+}
+
+.footer li a {
+  color: #535353;
+  font-size: 1.6rem;
+  line-height: normal;
+}
+
+/* Căn giữa logo và chữ của các nền tảng Mạng Xã Hội */
+.footer .center-icon a {
+  display: flex;
+  align-items: center;
+}
+
+.footer .list .social-icon {
+  margin-right: 9px;
+}
+
+.footer .copyright {
+  margin-top: 80px;
+  padding-bottom: 50px;
+  text-align: center;
+  color: #b0b5b4;
+  font-size: 1.8rem;
+  line-height: normal;
 }
